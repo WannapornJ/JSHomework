@@ -37,5 +37,9 @@ function gdc_2(c, d) {
     return c
 }
 
+const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+const findGCD = (a, b) => (a === 0 ? b : findGCD(b % a, a));
+
+
 console.log(gdc(storage))
 console.log(storage)
